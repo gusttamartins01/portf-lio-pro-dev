@@ -9,7 +9,7 @@ export default function About() {
 
           <div className="relative bg-gray-900/50 border border-white/5 rounded-2xl p-6 backdrop-blur-sm">
             <img
-              src="public/assets/aboutMe.png"
+              src="/assets/aboutMe.png"
               alt="Gustavo Martins - Dev"
               className="rounded-xl shadow-2xl grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition duration-700 w-full max-w-sm"
             />
