@@ -103,10 +103,10 @@ export default function Footer() {
           <div className="flex items-center gap-6">
             <span className="text-[9px] font-black uppercase tracking-widest text-purple-600">Powered by</span>
             <div className="flex gap-4 text-lg text-gray-500">
-              <SiNextdotjs title="Next.js" className="hover:text-white transition-colors cursor-help" />
-              <SiTailwindcss title="Tailwind CSS" className="hover:text-sky-400 transition-colors cursor-help" />
-              <SiNodedotjs title="Node.js" className="hover:text-green-500 transition-colors cursor-help" />
-              <SiJavascript title="JavaScript" className="hover:text-yellow-500 transition-colors cursor-help rounded-sm" />
+              <SiNextdotjs title="Next.js" className="hover:text-white transition-colors cursor-pointer" />
+              <SiTailwindcss title="Tailwind CSS" className="hover:text-sky-400 transition-colors cursor-pointer" />
+              <SiNodedotjs title="Node.js" className="hover:text-green-500 transition-colors cursor-pointer" />
+              <SiJavascript title="JavaScript" className="hover:text-yellow-500 transition-colors cursor-pointer rounded-sm" />
             </div>
           </div>
         </div>
