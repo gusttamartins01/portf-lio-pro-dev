@@ -33,7 +33,8 @@ export default function About() {
 
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed text-center md:text-left">
             <p>
-              Me chamo <span className="text-white font-semibold italic">Gustavo Martins</span>.
+              Olá, eu me chamo <span className="text-white font-semibold italic">Gustavo Martins</span>,
+              natural de <span className="text-white font-semibold italic">Fortaleza, Ceará</span>.
               Minha jornada na tecnologia é movida pela vontade constante de entender o "porquê" das coisas.
               Como estudante de Análise e Desenvolvimento de Sistemas e Desenvolvedor Full Stack, acredito que uma boa solução não nasce do código,
               mas da compreensão do problema que ele se propõe a resolver.
