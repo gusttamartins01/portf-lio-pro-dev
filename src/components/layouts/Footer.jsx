@@ -96,7 +96,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-center md:items-start gap-1">
             <p className="text-purple-600 text-[10px] font-bold uppercase tracking-widest">
-              © {currentYear} Fortaleza - Ceará. Todos os direitos reservados.
+              © {currentYear} Fortaleza - CE. Todos os direitos reservados.
             </p>
           </div>
 
