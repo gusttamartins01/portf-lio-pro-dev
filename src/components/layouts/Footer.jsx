@@ -8,7 +8,7 @@ export default function Footer() {
     {
       name: "WhatsApp",
       icon: <FaWhatsapp />,
-      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá...",
+      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20mais%20informações%20dos%20seus%20serviços",
       color: "hover:text-green-500 hover:border-green-500/20"
     },
     {
@@ -34,10 +34,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 border-t border-white/5 pt-20 pb-10 px-8 font-sans overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        {/* Layout Principal - Flexbox para empurrar conteúdo para as pontas */}
         <div className="flex flex-col md:flex-row justify-between gap-16 mb-20">
 
-          {/* Lado Esquerdo: Branding */}
           <div className="flex flex-col items-center md:items-start max-w-sm">
             <div className="relative group mb-6">
               <div className="absolute -inset-2 bg-purple-600/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
