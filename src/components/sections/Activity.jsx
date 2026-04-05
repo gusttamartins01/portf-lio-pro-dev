@@ -52,8 +52,8 @@ export default function Activity() {
         </div>
       )
     },
-    influencer: {
-      title: "Dev Influencer",
+    creator: {
+      title: "Content Creator",
       description: "Conteúdo para inspirar e educar devs nas redes.",
       icon: <Lucide.Megaphone size={16} />,
       content: (
