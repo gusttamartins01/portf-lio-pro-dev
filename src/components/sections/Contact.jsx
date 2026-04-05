@@ -94,16 +94,6 @@ export default function Contact() {
             </form>
           </Card>
         </div>
-
-        <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8 text-gray-500 text-[10px] font-bold uppercase tracking-widest">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-            Disponível para novos projetos
-          </div>
-          <div className="hidden md:block w-px h-4 bg-white/10" />
-          <p>© 2026  Gustavo Martins — Dev Portfolio</p>
-        </div>
-
       </div>
     </section>
   );
