@@ -4,11 +4,11 @@ import * as Lucide from "lucide-react";
 import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 export default function Activity() {
-  const [activeTab, setActiveTab] = useState("professor");
+  const [activeTab, setActiveTab] = useState("mentor");
 
   const activities = {
-    professor: {
-      title: "Professor de Desenvolvimento Web",
+    mentor: {
+      title: "Mentor de Desenvolvimento Web",
       description: "Compartilhando conhecimento e guiando a próxima geração de desenvolvedores.",
       icon: <Lucide.GraduationCap size={16} />,
       content: (
