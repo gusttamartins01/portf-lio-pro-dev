@@ -44,7 +44,7 @@ export default function Contact() {
                     <input
                       type="text"
                       required
-                      placeholder="Ex: Luiz Gustavo"
+                      placeholder="Ex:Gustavo Martins"
                       className="w-full bg-white/5 border border-white/10 rounded-2xl py-4 pl-12 pr-4 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all placeholder:text-gray-600"
                     />
                   </div>
