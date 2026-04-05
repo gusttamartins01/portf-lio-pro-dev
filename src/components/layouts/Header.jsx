@@ -4,93 +4,85 @@ import { FaCode, FaBars, FaTimes } from "react-icons/fa";
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState("início");
+  const [active, setActive] = useState("inicio");
 
-  const sections = ["início", "sobre", "projetos", "habilidades", "experiência", "serviços", "contatos"];
+  const menuItems = [
+    { id: "inicio", label: "Início" },
+    { id: "sobre", label: "Sobre" },
+    { id: "projetos", label: "Projetos" },
+    { id: "atividades", label: "Atividades" },
+    { id: "habilidades", label: "Habilidades" },
+    { id: "experiencia", label: "Experiência" },
+    { id: "servicos", label: "Serviços" },
+    { id: "contato", label: "Contato" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-
-      sections.forEach((section) => {
-        const el = document.getElementById(section);
+      menuItems.forEach((item) => {
+        const el = document.getElementById(item.id);
         if (el) {
-          const offset = el.offsetTop - window.innerHeight / 3;
-          const height = el.offsetHeight;
-
-          if (window.scrollY >= offset && window.scrollY < offset + height) {
-            setActive(section);
+          const offset = el.offsetTop - 120;
+          if (window.scrollY >= offset && window.scrollY < offset + el.offsetHeight) {
+            setActive(item.id);
           }
         }
       });
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const linkClass = (section) =>
-    `cursor-pointer transition relative ${active === section
-      ? "text-purple-600"
-      : "text-gray-300 hover:text-purple-600"
-    }`;
-
   return (
-    <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
-        ? "bg-gray-950/80 backdrop-blur-lg border-b border-purple-600/20"
-        : "bg-gray-950/80"
-        }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${scrolled ? "bg-gray-950/90 backdrop-blur-md border-b border-white/5 py-3" : "bg-gray-950/80 py-4"}`}>
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
-        <div className="flex items-center gap-4">
-
+        <div className="flex-1 lg:hidden">
           <button
-            className="md:hidden text-white text-xl"
+            className="text-white text-2xl p-2 hover:text-purple-500 transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <FaTimes /> : <FaBars />}
           </button>
+        </div>
 
-          <a
-            href="#início"
-            className="group flex items-center gap-2 text-xl font-bold text-white animate-pulse"
-          >
-            <FaCode className="text-purple-600 transition group-hover:scale-110 group-hover:rotate-6" />
-            Gustavo
-            <span className="text-purple-600">
-              .Dev
+        <div className="flex justify-center lg:justify-start lg:flex-none">
+          <a href="#inicio" className="flex items-center gap-2 group">
+            <FaCode className="text-purple-600 text-xl group-hover:rotate-12 transition-transform" />
+            <span className="text-white font-black italic tracking-tighter text-lg uppercase">
+              Gustavo<span className="text-purple-600">.Dev</span>
             </span>
           </a>
         </div>
 
-        <nav className="hidden md:flex gap-6 items-center text-sm">
-          {sections.map((section) => (
+        <nav className="hidden lg:flex gap-8 flex-1 justify-end">
+          {menuItems.map((item) => (
             <a
-              key={section}
-              href={`#${section}`}
-              className={`${linkClass(section)} after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-purple-600 after:transition-all hover:after:w-full`}
+              key={item.id}
+              href={`#${item.id}`}
+              className={`text-[10px] font-bold uppercase tracking-widest transition-all relative group ${active === item.id ? "text-purple-500" : "text-gray-400 hover:text-purple-400"}`}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {item.label}
+              <span className={`absolute -bottom-1 left-0 h-[2px] bg-purple-600 transition-all ${active === item.id ? "w-full" : "w-0 group-hover:w-full"}`} />
             </a>
           ))}
         </nav>
+
+        <div className="flex-1 lg:hidden pointer-events-none"></div>
+
       </div>
 
-      <div
-        className={`md:hidden bg-gray-900/20 backdrop-blur-lg px-6 overflow-hidden transition-all duration-300 ${menuOpen ? "max-h-96 py-4" : "max-h-0"
-          }`}
-      >
-        <div className="flex flex-col gap-4">
-          {sections.map((section) => (
+      <div className={`lg:hidden bg-gray-950 transition-all duration-500 overflow-hidden border-b border-white/5 ${menuOpen ? "max-h-screen opacity-100 py-8" : "max-h-0 opacity-0"}`}>
+        <div className="flex flex-col items-center gap-6">
+          {menuItems.map((item) => (
             <a
-              key={section}
-              href={`#${section}`}
-              className={linkClass(section)}
+              key={item.id}
+              href={`#${item.id}`}
+              className={`font-bold uppercase text-xs tracking-widest ${active === item.id ? "text-purple-500" : "text-gray-400"}`}
               onClick={() => setMenuOpen(false)}
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
+              {item.label}
             </a>
           ))}
         </div>
