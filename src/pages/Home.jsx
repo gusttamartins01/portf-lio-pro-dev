@@ -5,6 +5,9 @@ import About from '../components/sections/About'
 import Skills from '../components/sections/Skills'
 import Projects from '../components/sections/Projects'
 import Contact from '../components/sections/Contact'
+import Experience from '../components/sections/Experience'
+import Services from '../components/sections/Services'
+import Activity from '../components/sections/Activity'
 
 export default function Home() {
   return (
@@ -12,8 +15,11 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Activity />
+      <Skills />
+      <Experience />
+      <Services />
       <Contact />
       <Footer />
     </>
