@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center px-8 py-20 overflow-hidden">
+    <section id="inicio" className="relative w-full min-h-screen flex items-center px-8 py-24 overflow-hidden">
       <img
         src="/assets/bgHero4.png"
         alt="background"
