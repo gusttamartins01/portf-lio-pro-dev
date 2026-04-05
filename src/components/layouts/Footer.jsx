@@ -1,5 +1,5 @@
 import { FaInstagram, FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiNodedotjs, SiJavascript } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiNodedotjs, SiJavascript, SiVite, SiReact, SiTypescript } from "react-icons/si";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -102,9 +102,12 @@ export default function Footer() {
             <span className="text-[9px] font-black uppercase tracking-widest text-purple-600">Powered by</span>
             <div className="flex gap-4 text-lg text-gray-500">
               <SiNextdotjs title="Next.js" className="hover:text-white transition-colors cursor-pointer" />
+              <SiReact title="Tailwind CSS" className="hover:text-sky-500 transition-colors cursor-pointer" />
               <SiTailwindcss title="Tailwind CSS" className="hover:text-sky-400 transition-colors cursor-pointer" />
               <SiNodedotjs title="Node.js" className="hover:text-green-500 transition-colors cursor-pointer" />
               <SiJavascript title="JavaScript" className="hover:text-yellow-500 transition-colors cursor-pointer rounded-sm" />
+              <SiTypescript title="JavaScript" className="hover:text-blue-600 transition-colors cursor-pointer rounded-sm" />
+              <SiVite title="Tailwind CSS" className="hover:text-purple-500 transition-colors cursor-pointer" />
             </div>
           </div>
         </div>
