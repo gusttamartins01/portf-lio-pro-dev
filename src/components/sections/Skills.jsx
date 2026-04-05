@@ -36,8 +36,8 @@ export default function Skills() {
   return (
     <section id="habilidades" className="py-20 bg-gray-950 overflow-hidden font-sans">
       <div className="max-w-7xl mx-auto px-8 mb-16">
-        <h2 className="text-purple-500 font-mono text-sm tracking-[0.5em] uppercase mb-2">// Tech Stack</h2>
-        <h3 className="text-3xl md:text-4xl font-bold italic text-white">
+        <h2 className="text-purple-500 font-mono text-sm tracking-[0.5em] uppercase mb-2 text-center">// Tech Stack</h2>
+        <h3 className="text-3xl md:text-4xl font-bold italic text-white text-center">
           Minhas <span className="text-purple-600 font-extrabold">Habilidades</span>.
         </h3>
       </div>

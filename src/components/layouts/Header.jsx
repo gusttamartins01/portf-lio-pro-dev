@@ -56,7 +56,7 @@ export default function Header() {
           </a>
         </div>
 
-        <nav className="hidden lg:flex gap-8 flex-1 justify-end">
+        <nav className="hidden lg:flex gap-5 flex-1 justify-end">
           {menuItems.map((item) => (
             <a
               key={item.id}
