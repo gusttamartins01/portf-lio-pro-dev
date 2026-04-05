@@ -8,7 +8,7 @@ export default function Footer() {
     {
       name: "WhatsApp",
       icon: <FaWhatsapp />,
-      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20mais%20informações%20dos%20seus%20serviços",
+      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá...",
       color: "hover:text-green-500 hover:border-green-500/20"
     },
     {
@@ -32,77 +32,81 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-950 border-t border-white/5 pt-16 pb-8 px-8 font-sans">
+    <footer className="bg-gray-950 border-t border-white/5 pt-20 pb-10 px-8 font-sans overflow-hidden">
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16 items-center md:items-start text-center md:text-left">
+        {/* Layout Principal - Flexbox para empurrar conteúdo para as pontas */}
+        <div className="flex flex-col md:flex-row justify-between gap-16 mb-20">
 
-          <div className="flex flex-col items-center md:items-start gap-4">
-            <div className="relative group">
+          {/* Lado Esquerdo: Branding */}
+          <div className="flex flex-col items-center md:items-start max-w-sm">
+            <div className="relative group mb-6">
               <div className="absolute -inset-2 bg-purple-600/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition duration-700"></div>
-
               <img
                 src="/assets/favicon.png"
-                alt="Logo Gustavo Martins"
-                className="relative w-24 h-24 md:w-28 md:h-28 object-contain transition-transform duration-500 group-hover:scale-110"
+                alt="Logo"
+                className="relative w-20 h-20 object-contain transition-transform duration-500 group-hover:animate-pulse"
               />
             </div>
-            <div>
-              <h4 className="text-white font-black italic tracking-tighter text-2xl">
-                GUSTAVO<span className="text-purple-600">MARTINS</span>
-              </h4>
-              <p className="text-gray-400 text-[10px] font-mono uppercase tracking-[0.3em]">Full Stack Developer</p>
+            <h4 className="text-white font-black italic tracking-tighter text-3xl mb-2">
+              GUSTAVO<span className="text-purple-600">MARTINS</span>
+            </h4>
+            <p className="text-gray-500 text-[15px] font-bold leading-relaxed uppercase tracking-[0.2em] font-mono text-center md:text-left">
+              Desenvolvedor Full Stack
+            </p>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-12 md:gap-24 text-center md:text-left">
+
+            <div className="flex flex-col gap-5">
+              <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-purple-600 opacity-80">Navegação</h5>
+              <nav className="grid grid-cols-2 gap-x-8 gap-y-3 text-xs font-bold text-gray-400">
+                <a href="#inicio" className="hover:text-white transition-all hover:translate-x-1">Início</a>
+                <a href="#projetos" className="hover:text-white transition-all hover:translate-x-1">Projetos</a>
+                <a href="#sobre" className="hover:text-white transition-all hover:translate-x-1">Sobre</a>
+                <a href="#atividades" className="hover:text-white transition-all hover:translate-x-1">Atividades</a>
+                <a href="#experiencia" className="hover:text-white transition-all hover:translate-x-1">Experiência</a>
+                <a href="#habilidades" className="hover:text-white transition-all hover:translate-x-1">Skills</a>
+                <a href="#serviços" className="hover:text-white transition-all hover:translate-x-1">Serviços</a>
+                <a href="#contatos" className="hover:text-white transition-all hover:translate-x-1">Contatos</a>
+              </nav>
             </div>
-          </div>
 
-          <div className="flex flex-col gap-4">
-            <h5 className="text-[10px] font-black uppercase tracking-[0.2em] text-purple-500">Navegação</h5>
-            <nav className="flex flex-col gap-2 text-sm font-medium text-gray-400">
-              <a href="#inicio" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Início</a>
-              <a href="#sobre" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Sobre</a>
-              <a href="#projetos" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Projetos</a>
-              <a href="#atividades" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Atividades</a>
-              <a href="#habilidades" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Skills</a>
-              <a href="#experiencia" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Experiência</a>
-              <a href="#serviços" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Serviços</a>
-              <a href="#contatos" className="hover:text-white transition-colors w-fit mx-auto md:mx-0">Contatos</a>
-            </nav>
-          </div>
-
-          <div className="flex flex-col gap-6 items-center md:items-end">
-            <h5 className="text-[10px] font-black uppercase tracking-[0.2em] text-purple-500">Conecte-se</h5>
-            <div className="flex gap-4">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`
-                    w-12 h-12 flex items-center justify-center rounded-2xl bg-white/5 border border-white/10 
-                    text-xl text-gray-400 transition-all duration-300 transform hover:-translate-y-1
-                    ${social.color}
-                  `}
-                  title={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
+            {/* Social */}
+            <div className="flex flex-col gap-5 items-center md:items-start">
+              <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-purple-600 opacity-80">Social</h5>
+              <div className="flex gap-3">
+                {socialLinks.map((social, index) => (
+                  <a
+                    key={index}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 border border-white/10 text-lg text-gray-400 transition-all duration-300 hover:-translate-y-1 ${social.color}`}
+                    title={social.name}
+                  >
+                    {social.icon}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
 
+          </div>
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-purple-600 text-[10px] font-bold uppercase tracking-widest">
-            © {currentYear} Todos os direitos reservados.
-          </p>
-          <div className="flex items-center gap-4 text-gray-500">
-            <span className="text-[9px] font-black uppercase tracking-widest mr-2 text-purple-600">Built with:</span>
-            <div className="flex gap-3 text-lg">
-              <SiNextdotjs title="Next.js" className="hover:text-white transition-colors" />
-              <SiTailwindcss title="Tailwind CSS" className="hover:text-sky-400 transition-colors" />
-              <SiNodedotjs title="Node.js" className="hover:text-green-500 transition-colors" />
-              <SiJavascript title="TypeScript" className="hover:text-yellow-500 transition-colors" />
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex flex-col items-center md:items-start gap-1">
+            <p className="text-purple-600 text-[10px] font-bold uppercase tracking-widest">
+              © {currentYear} Todos os direitos reservados.
+            </p>
+          </div>
+
+          <div className="flex items-center gap-6">
+            <span className="text-[9px] font-black uppercase tracking-widest text-purple-600">Powered by</span>
+            <div className="flex gap-4 text-lg text-gray-500">
+              <SiNextdotjs title="Next.js" className="hover:text-white transition-colors cursor-help" />
+              <SiTailwindcss title="Tailwind CSS" className="hover:text-sky-400 transition-colors cursor-help" />
+              <SiNodedotjs title="Node.js" className="hover:text-green-500 transition-colors cursor-help" />
+              <SiJavascript title="JavaScript" className="hover:text-yellow-500 transition-colors cursor-help rounded-sm" />
             </div>
           </div>
         </div>
