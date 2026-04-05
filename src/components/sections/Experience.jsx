@@ -5,7 +5,7 @@ export default function Experience() {
   const experiences = [
     {
       company: "ChaoScience Ciência e Tecnologia",
-      role: "estágio Dev Full Stack ",
+      role: "Dev Full Stack ",
       period: "Abr - 2026 — Presente",
       description: "SaaS voltado para profissionais da área da sáude focados em condicionamento físico, alto rendimento e performance espor",
       achievements: [
@@ -27,7 +27,7 @@ export default function Experience() {
     },
     {
       company: "HypeCode Software House - Espírito Santo, Brasil",
-      role: "Dev Full Stack Júnior pj",
+      role: "Dev Full Stack web pj",
       period: "Set - 2025 — Mar - 2026",
       description: "Foco total em ecossistema Next.js e integrações com APIs complexas.",
       achievements: [
@@ -38,7 +38,7 @@ export default function Experience() {
     },
     {
       company: "RoboDev Software House",
-      role: "Dev Front-end Júnior pj",
+      role: "Dev Front-end pj",
       period: "Mai - 2025 — Nov - 2025",
       description: "Início da jornada focado em práticas de Clean Code e Git Flow.",
       achievements: [
