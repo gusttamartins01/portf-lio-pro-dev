@@ -50,7 +50,7 @@ export default function Header() {
         <div className="flex justify-center lg:justify-start lg:flex-none">
           <a href="#inicio" className="flex items-center gap-2 group">
             <FaCode className="text-purple-600 text-xl group-hover:rotate-12 transition-transform" />
-            <span className="text-white font-black italic tracking-tighter text-lg uppercase">
+            <span className="text-white font-black italic tracking-tighter text-lg uppercase animate-pulse">
               Gustavo<span className="text-purple-600">.Dev</span>
             </span>
           </a>

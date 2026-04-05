@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiNodedotjs, SiJavascript } from "react-icons/si";
 
 export default function Footer() {
@@ -6,21 +6,27 @@ export default function Footer() {
 
   const socialLinks = [
     {
+      name: "WhatsApp",
+      icon: <FaWhatsapp />,
+      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site%20.%Gostaria%20de520mais%20informações%20dos%20seus%20serviços",
+      color: "hover:text-green-500 hover:border-green-500/20"
+    },
+    {
       name: "Instagram",
       icon: <FaInstagram />,
-      url: "#",
+      url: "https://www.instagram.com/gustta_gus/",
       color: "hover:text-pink-500 hover:border-pink-500/20"
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedinIn />,
-      url: "#",
+      url: "https://www.linkedin.com/in/gustavo-martins-197b70298/",
       color: "hover:text-blue-500 hover:border-blue-500/20"
     },
     {
       name: "GitHub",
       icon: <FaGithub />,
-      url: "#",
+      url: "https://github.com/gusttamartins01",
       color: "hover:text-white hover:border-white/20"
     },
   ];

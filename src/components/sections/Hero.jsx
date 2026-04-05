@@ -45,24 +45,27 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/curriculo.pdf"
+              href="/assets/Gustavo Martins - Currículo profissional.pdf"
               download
               className="px-6 py-3 bg-purple-800 text-white rounded-xl font-semibold hover:bg-purple-500 transition duration-300 shadow-md hover:shadow-purple-800/50"
             >
               Baixar Currículo
             </a>
             <a
-              href="#projects"
+              href="#projetos"
               className="px-6 py-3 border border-purple-500 text-purple-400 rounded-xl font-semibold hover:bg-purple-800 hover:text-white transition duration-300"
             >
               Projetos
             </a>
             <a
-              href="#contact"
+              href="https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20mais%20informações%20dos%20seus%20serviços"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 border border-purple-500 text-purple-500 rounded-xl font-semibold hover:bg-purple-800 hover:text-white transition duration-300"
             >
               Contato
             </a>
+
           </div>
         </div>
 
