@@ -1,56 +1,69 @@
 import Card from "../ui/Card";
 import * as Lucide from "lucide-react";
 import {
+  SiHtml5,
   SiReact,
-  SiNodedotjs,
   SiTailwindcss,
   SiPostgresql,
   SiTypescript,
   SiNextdotjs,
   SiFirebase,
-  SiGithub
+  SiGithub,
+  SiNodedotjs,
+  SiDocker,
+  SiJavascript,
+  SiSupabase,
 } from "react-icons/si";
+import { FaCss3Alt } from 'react-icons/fa'; // Importando o Java Clássico aqui
+
 
 export default function Projects() {
   const projects = [
     {
-      title: "Finans Fullstack",
-      description: "Plataforma de controle financeiro com fluxos de caixa e análise de gastos detalhada.",
-      objective: "Organização financeira simplificada com foco em UX moderna.",
+      title: "Smart Inventory System",
+      description: "Dashboard Full Stack para controle de inventário em tempo real. Implementa CRUD completo e detalhad0.",
+      objective: "Organização do inventário simplificada com foco em UX moderna.",
       tech: [
-        { name: "React", icon: <SiReact /> },
+        { name: "HTML5", icon: <SiHtml5 /> },
+        { name: "CSS3", icon: <FaCss3Alt /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
         { name: "Node.js", icon: <SiNodedotjs /> },
-        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "Docker", icon: <SiDocker /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
       ],
-      github: "https://github.com/gustavomartins",
-      demo: "https://projeto-demo.vercel.app",
-      image: "/assets/project-1.png"
+      github: "https://github.com/gusttamartins01/Estoque-Pro",
+      demo: "https://estoque-pro-flame.vercel.app/",
+      image: "/assets/project1.png"
     },
     {
-      title: "DevQuest Platform",
-      description: "Sistema gamificado para praticar lógica de programação.",
-      objective: "Engajamento através de desafios e recompensas reais.",
-      tech: [
-        { name: "Next.js", icon: <SiNextdotjs /> },
-        { name: "TypeScript", icon: <SiTypescript /> },
-        { name: "Firebase", icon: <SiFirebase /> },
-      ],
-      github: "https://github.com/gustavomartins",
-      demo: "https://projeto-demo.vercel.app",
-      image: "/assets/project-2.png"
-    },
-    {
-      title: "Alpha Automation",
-      description: "Dashboard de monitoramento industrial em tempo real.",
-      objective: "Métricas críticas para tomada de decisão rápida.",
+      title: 'Project "My First Job"',
+      description: "Sistema desenvolvido para dar suporte aos alunos do ensino médio, e pessoas que desejam entrar ou se realocar no mercado de trabalho.",
+      objective: "Facilitar a transição acadêmica para o mercado de trabalho através de ferramentas práticas de empregabilidade.",
       tech: [
         { name: "React", icon: <SiReact /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
         { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Supabase", icon: <SiSupabase /> },
       ],
-      github: "https://github.com/gustavomartins",
-      demo: "https://projeto-demo.vercel.app",
-      image: "/assets/project-3.png"
+      github: "https://github.com/gusttamartins01/project-meu-primeiro-trampo",
+      demo: "https://project-meu-primeiro-trampo.vercel.app/",
+      image: "/assets/project2.png"
+    },
+    {
+      title: 'Project UniConnect',
+      description: "Sistema para comunidade academica de alunos e professores universitários",
+      objective: "Fomentar o networking e a colaboração científica através de um ecossistema digital intuitivo e seguro.",
+      tech: [
+        { name: "React", icon: <SiReact /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Supabase", icon: <SiSupabase /> },
+      ],
+      github: "https://github.com/gusttamartins01/connect-hub",
+      demo: "https://learn-connect-hub-93.vercel.app/",
+      image: "/assets/project3.png"
     }
   ];
 
