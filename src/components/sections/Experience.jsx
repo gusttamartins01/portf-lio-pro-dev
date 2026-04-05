@@ -4,35 +4,46 @@ import * as Lucide from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      company: "Nome da Empresa Atual",
-      role: "Dev Full Stack Senior",
-      period: "2024 — Presente",
-      description: "Liderança técnica no desenvolvimento de microserviços e interfaces de alta performance.",
+      company: "ChaoScience Ciência e Tecnologia",
+      role: "estágio Dev Full Stack ",
+      period: "Abr - 2026 — Presente",
+      description: "SaaS voltado para profissionais da área da sáude focados em condicionamento físico, alto rendimento e performance espor",
       achievements: [
-        "Redução de 40% no tempo de carregamento.",
-        "Implementação de arquitetura escalável utilizando Next.js.",
+        "Implementação de arquitetura escalável integrando C# e React/Next.js.",
+        "Foco em usabilidade para profissionais de saúde que monitoram atletas e pacientes."
       ],
       current: true,
     },
     {
-      company: "Empresa Anterior",
-      role: "Desenvolvedor Pleno",
-      period: "2022 — 2024",
-      description: "Foco total em ecossistema React e integrações com APIs complexas.",
+      company: "Virtutis Energy",
+      role: "Dev Full Stack Ingressante",
+      period: "Mar - 2026 — Presente",
+      description: "Fintech de energia renovável focada em locação solar e democratização de investimentos (Vitis).",
       achievements: [
-        "Migração de sistema legado para stack moderna.",
-        "Integração de sistemas de pagamento.",
+        "Manutenção e implementação de novas funcionalidades no ecossistema Web (Next.js) e Mobile (Swift).",
+        "Implementação de automações e fluxos de trabalho otimizados com Inteligência Artificial.",
+      ],
+      current: true,
+    },
+    {
+      company: "HypeCode Software House - Espírito Santo, Brasil",
+      role: "Dev Full Stack Júnior pj",
+      period: "Set - 2025 — Mar - 2026",
+      description: "Foco total em ecossistema Next.js e integrações com APIs complexas.",
+      achievements: [
+        "Desenvolvimento de sistemas completos.",
+        "Desenvolvimento de SaaS.",
       ],
       current: false,
     },
     {
-      company: "Primeira Experiência",
-      role: "Junior / Estagiário",
-      period: "2021 — 2022",
+      company: "RoboDev Software House",
+      role: "Dev Front-end Júnior pj",
+      period: "Mai - 2025 — Nov - 2025",
       description: "Início da jornada focado em práticas de Clean Code e Git Flow.",
       achievements: [
-        "Desenvolvimento de mais de 20 landing pages.",
-        "Automação de processos internos.",
+        "Desenvolvimento de  Landing Pages.",
+        "Criação de projetos para clientes.",
       ],
       current: false,
     },
