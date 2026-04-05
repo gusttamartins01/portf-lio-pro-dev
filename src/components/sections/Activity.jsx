@@ -86,7 +86,7 @@ export default function Activity() {
     <section id="atividades" className="py-24 px-8 bg-gray-950 text-white overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12 text-center md:text-left">
-          <h2 className="text-purple-500 font-mono text-[11px] tracking-[0.5em] uppercase mb-2">// Lifestyle</h2>
+          <h2 className="text-purple-500 font-mono text-[11px] tracking-[0.5em] uppercase mb-2">// Insights</h2>
           <h3 className="text-4xl font-bold italic tracking-tight">
             Além do <span className="text-purple-600 font-extrabold text-5xl">Código</span>.
           </h3>
