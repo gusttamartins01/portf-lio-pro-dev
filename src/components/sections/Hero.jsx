@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative w-full min-h-screen flex items-center px-8 py-20 overflow-hidden">
       <img
-        src="../../../public/assets/bgHero4.png"
+        src="/assets/bgHero4.png"
         alt="background"
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -10,7 +10,21 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gray-950/80"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-10 items-center">
+
         <div className="text-center md:text-left order-2 md:order-1">
+
+          <div className="flex items-center justify-center md:justify-start mb-6">
+            <div className="flex items-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 backdrop-blur-sm">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+              </span>
+              <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-gray-300">
+                Disponível para novos projetos
+              </span>
+            </div>
+          </div>
+
           <p className="text-gray-300 text-2xl md:text-5xl mb-4">
             Olá, me chamo
           </p>
@@ -55,7 +69,7 @@ export default function Hero() {
         <div className="flex justify-center order-1 md:order-2">
           <div className="relative">
             <img
-              src="../../../public/assets/me.png"
+              src="/assets/me.png"
               alt="Gustavo Martins"
               className="w-60 h-60 md:w-96 md:h-96 object-cover rounded-full border-4 border-purple-800 shadow-xl transform transition-transform duration-1000 hover:scale-105"
             />
