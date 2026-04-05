@@ -26,7 +26,7 @@ export default function Services() {
       title: "APIs & Backend",
       description: "Desenvolvimento de APIs RESTful e integração com bancos de dados relacionais e não-relacionais.",
       icon: <Layers className="text-purple-500" size={32} strokeWidth={1.5} />,
-      tags: ["Node.js", "PostgreSQL", "Prisma"]
+      tags: ["Node.js", "Java", "PostgreSQL"]
     },
     {
       title: "Automação (n8n)",
@@ -38,7 +38,7 @@ export default function Services() {
       title: "Clean Code & Refactoring",
       description: "Melhoria de código legado, aplicando padrões de projeto e garantindo manutenibilidade a longo prazo.",
       icon: <Code2 className="text-purple-500" size={32} strokeWidth={1.5} />,
-      tags: ["Patterns", "Refactor", "Escalabilidade"]
+      tags: ["Testing", "Refactor", "Escalabilidade"]
     },
     {
       title: "SEO & Performance",
