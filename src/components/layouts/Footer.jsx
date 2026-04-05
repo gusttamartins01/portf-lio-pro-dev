@@ -8,7 +8,7 @@ export default function Footer() {
     {
       name: "WhatsApp",
       icon: <FaWhatsapp />,
-      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site%20.%Gostaria%20de520mais%20informações%20dos%20seus%20serviços",
+      url: "https://api.whatsapp.com/send?phone=5585998568223&text=Olá,%20Gustavo,%20vim%20através%20do%20seu%20site.%20Gostaria%20de%20mais%20informações%20dos%20seus%20serviços",
       color: "hover:text-green-500 hover:border-green-500/20"
     },
     {
