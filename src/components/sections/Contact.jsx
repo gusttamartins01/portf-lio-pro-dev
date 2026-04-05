@@ -11,19 +11,24 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+    if (!publicKey) {
+      console.error("Erro: Public Key não encontrada! Verifique o arquivo .env");
+      setIsSubmitting(false);
+      return;
+    }
+
+    emailjs.sendForm(serviceId, templateId, formRef.current, publicKey)
       .then(() => {
-        alert("Mensagem enviada com sucesso!");
+        alert("Enviado com sucesso!");
         setIsSubmitting(false);
         e.target.reset();
       })
-      .catch((error) => {
-        console.error("Erro ao enviar:", error);
-        alert("Erro ao enviar mensagem.");
+      .catch((err) => {
+        console.error("Erro ao enviar:", err);
         setIsSubmitting(false);
       });
   };
