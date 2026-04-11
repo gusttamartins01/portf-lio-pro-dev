@@ -47,6 +47,17 @@ export default function Experience() {
       ],
       current: false,
     },
+    {
+      company: "Unifametro -  Fortaleza - CE",
+      role: "Análise e Desenvolvimento de Sistemas",
+      period: "Fev - 2025 — Presente",
+      description: "Cursando graduação em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento de software, lógica de programação, estruturas de dados, bancos de dados relacionais e engenharia de software. Estudo práticas modernas de desenvolvimento como Clean Code, Git Flow, versionamento de código, arquitetura de sistemas e desenvolvimento de aplicações web. Vivência com projetos acadêmicos aplicados, utilizando tecnologias como Java, Python, JavaScript e frameworks modernos, além de trabalho em equipe e metodologias ágeis.",
+      achievements: [
+        "Desenvolvimento de projetos acadêmicos e práticos.",
+        "Trabalhos em equipe com foco em metodologias ágeis.",
+      ],
+      current: true,
+    },
   ];
 
   return (
