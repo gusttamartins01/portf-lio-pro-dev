@@ -69,7 +69,6 @@ export default function Footer() {
               </nav>
             </div>
 
-            {/* Social */}
             <div className="flex flex-col gap-5 items-center md:items-start">
               <h5 className="text-[10px] font-black uppercase tracking-[0.3em] text-purple-600 opacity-80">Social</h5>
               <div className="flex gap-3">
