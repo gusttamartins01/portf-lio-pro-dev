@@ -13,6 +13,8 @@ import {
   SiDocker,
   SiJavascript,
   SiSupabase,
+  SiMinutemailer,
+  SiVite,
 } from "react-icons/si";
 import { FaCss3Alt } from 'react-icons/fa'; // Importando o Java Clássico aqui
 
@@ -34,6 +36,26 @@ export default function Projects() {
       github: "https://github.com/gusttamartins01/Estoque-Pro",
       demo: "https://estoque-pro-flame.vercel.app/",
       image: "/assets/project1.png"
+    },
+    {
+      title: "Professional Portfolio",
+      description: "Portfólio profissional desenvolvido para apresentar minha trajetória como desenvolvedor, incluindo habilidades técnicas, projetos, experiências e atividades. O projeto foi construído com foco em design moderno, responsividade e boa experiência do usuário, servindo como vitrine das minhas competências em desenvolvimento web."
+      ,
+      objective: "Apresentar de forma clara e profissional minhas habilidades, projetos e evolução como desenvolvedor, facilitando a visualização da minha experiência prática e acadêmica, além de demonstrar domínio em tecnologias modernas de desenvolvimento web."
+      ,
+      tech: [
+        { name: "Next.js", icon: <SiNextdotjs /> },
+        { name: "React", icon: <SiReact /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "Vite", icon: <SiVite /> },
+        { name: "SupaBase", icon: <SiSupabase /> },
+      ],
+      github: "https://github.com/gusttamartins01/portf-lio-pro-dev",
+      demo: "https://gustavo-portfolio-pro-dev.vercel.app/",
+      image: "/assets/portfolio-me.png"
     },
     {
       title: 'Project "My First Job"',
