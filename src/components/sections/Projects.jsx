@@ -13,10 +13,9 @@ import {
   SiDocker,
   SiJavascript,
   SiSupabase,
-  SiMinutemailer,
   SiVite,
 } from "react-icons/si";
-import { FaCss3Alt } from 'react-icons/fa'; // Importando o Java Clássico aqui
+import { FaCss3Alt } from 'react-icons/fa'; 
 
 
 export default function Projects() {
@@ -38,26 +37,6 @@ export default function Projects() {
       image: "/assets/project1.png"
     },
     {
-      title: "Professional Portfolio",
-      description: "Portfólio profissional desenvolvido para apresentar minha trajetória como desenvolvedor, incluindo habilidades técnicas, projetos, experiências e atividades. O projeto foi construído com foco em design moderno, responsividade e boa experiência do usuário, servindo como vitrine das minhas competências em desenvolvimento web."
-      ,
-      objective: "Apresentar de forma clara e profissional minhas habilidades, projetos e evolução como desenvolvedor, facilitando a visualização da minha experiência prática e acadêmica, além de demonstrar domínio em tecnologias modernas de desenvolvimento web."
-      ,
-      tech: [
-        { name: "Next.js", icon: <SiNextdotjs /> },
-        { name: "React", icon: <SiReact /> },
-        { name: "JavaScript", icon: <SiJavascript /> },
-        { name: "TypeScript", icon: <SiTypescript /> },
-        { name: "Node.js", icon: <SiNodedotjs /> },
-        { name: "Tailwind", icon: <SiTailwindcss /> },
-        { name: "Vite", icon: <SiVite /> },
-        { name: "SupaBase", icon: <SiSupabase /> },
-      ],
-      github: "https://github.com/gusttamartins01/portf-lio-pro-dev",
-      demo: "https://gustavo-portfolio-pro-dev.vercel.app/",
-      image: "/assets/portfolio-me.png"
-    },
-    {
       title: 'Project "My First Job"',
       description: "Sistema desenvolvido para dar suporte aos alunos do ensino médio, e pessoas que desejam entrar ou se realocar no mercado de trabalho.",
       objective: "Facilitar a transição acadêmica para o mercado de trabalho através de ferramentas práticas de empregabilidade.",
@@ -66,6 +45,7 @@ export default function Projects() {
         { name: "TypeScript", icon: <SiTypescript /> },
         { name: "Tailwind", icon: <SiTailwindcss /> },
         { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Vite", icon: <SiVite /> },
         { name: "Supabase", icon: <SiSupabase /> },
       ],
       github: "https://github.com/gusttamartins01/project-meu-primeiro-trampo",
@@ -81,6 +61,7 @@ export default function Projects() {
         { name: "TypeScript", icon: <SiTypescript /> },
         { name: "Tailwind", icon: <SiTailwindcss /> },
         { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Vite", icon: <SiVite /> },
         { name: "Supabase", icon: <SiSupabase /> },
       ],
       github: "https://github.com/gusttamartins01/connect-hub",
