@@ -64,7 +64,7 @@ export default function Activity() {
               className="w-full h-full object-cover"
               poster="/assets/event3.png"
             >
-              <source src="/assets/devInfluence.mp4" type="video/mp4" />
+              <source src="/assets/devFs.mp4" type="video/mp4" />
               Seu navegador não suporta vídeos.
             </video>
           </div>

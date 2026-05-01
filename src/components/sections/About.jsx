@@ -16,7 +16,7 @@ export default function About() {
 
             <div className="absolute -bottom-4 -left-4 bg-gray-900 border border-purple-500/30 p-3 rounded-lg shadow-2xl">
               <p className="text-[10px] uppercase tracking-widest text-purple-400 font-bold">Formação em curso</p>
-              <p className="text-sm font-semibold text-gray-200">Análise e Desenv. de Sistemas</p>
+              <p className="text-sm font-semibold text-gray-200">Análise e Dev. de Sistemas</p>
             </div>
           </div>
         </div>
