@@ -8,8 +8,8 @@ export default function Activity() {
 
   const activities = {
     mentor: {
-      title: "Mentor de Desenvolvimento Web",
-      description: "Compartilhando conhecimento e guiando a próxima geração de desenvolvedores.",
+      title: "Mentor de Desenvolvimento Full Stack Web",
+      description: "Compartilhando conhecimentos e guiando a próxima geração de desenvolvedores.",
       icon: <Lucide.GraduationCap size={16} />,
       content: (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-in fade-in duration-500">
@@ -24,7 +24,7 @@ export default function Activity() {
           <div className="flex flex-col justify-center">
             <h4 className="text-purple-400 font-bold mb-2 uppercase text-[10px] tracking-[0.2em]">Mentoria e Aulas</h4>
             <p className="text-[12px] text-gray-400 leading-relaxed italic">
-              "Ensinar é a melhor forma de aprender. Foco em HTML, CSS, JS e a realidade do mercado."
+              "Ensinar é a melhor forma de aprender. Foco em Desenvolvimento web Full Stack e a realidade do mercado tech."
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function Activity() {
     },
     creator: {
       title: "Content Creator",
-      description: "Conteúdo para inspirar e educar devs nas redes.",
+      description: "Conteúdo para  orientar iniciantes na área tech e mostrar o dia a dia de um Desenvolvedor.",
       icon: <Lucide.Megaphone size={16} />,
       content: (
         <div className="flex flex-col items-center animate-in zoom-in duration-500 w-full">

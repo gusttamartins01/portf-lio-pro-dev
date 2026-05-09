@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import Card from "../ui/Card";
 import { Send, User, Mail, MessageSquare, ArrowRight } from "lucide-react";
-import emailjs from "@emailjs/browser"; // Importação necessária
+import emailjs from "@emailjs/browser"; 
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -86,7 +86,7 @@ export default function Contact() {
                   name="message"
                   required
                   rows="5"
-                  placeholder="Descreva brevemente o que você precisa..."
+                  placeholder="Descreva a sua ideia ou 7porjeto..."
                   className="w-full bg-white/5 border border-white/10 rounded-3xl py-5 pl-12 pr-4 text-sm focus:outline-none focus:border-purple-500/50 focus:bg-white/10 transition-all placeholder:text-gray-600 resize-none"
                 ></textarea>
               </div>

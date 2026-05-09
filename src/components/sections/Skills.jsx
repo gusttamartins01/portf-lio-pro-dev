@@ -17,6 +17,7 @@ export default function Skills() {
     { name: "Next.js", icon: getIcon("SiNextdotjs"), color: "hover:text-white" },
     { name: "Node.js", icon: getIcon("SiNodedotjs"), color: "hover:text-[#339933]" },
     { name: "Java", icon: <FaJava />, color: "hover:text-[#6e0101]" },
+    { name: "Spring Boot", icon: getIcon("SiSpring"), color: "hover:text-[#339922]" },
     { name: "Tailwind", icon: getIcon("SiTailwindcss"), color: "hover:text-[#06B6D4]" },
     { name: "Vite", icon: getIcon("SiVite"), color: "hover:text-[#646cff]" },
     { name: "Supabase", icon: getIcon("SiSupabase"), color: "hover:text-[#3ECF8E]" },

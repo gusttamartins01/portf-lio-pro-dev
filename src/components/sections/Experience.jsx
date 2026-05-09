@@ -6,7 +6,7 @@ export default function Experience() {
     {
       company: "ChaoScience Ciência e Tecnologia",
       role: "Dev Full Stack ",
-      period: "Abr - 2026 — Presente",
+      period: "Abr - 2026 - Presente",
       description: "SaaS voltado para profissionais da área da sáude focados em condicionamento físico, alto rendimento e performance espor",
       achievements: [
         "Implementação de arquitetura escalável integrando C# e React/Next.js.",
@@ -16,7 +16,7 @@ export default function Experience() {
     },
     {
       company: "Virtutis Energy",
-      role: "Dev Full Stack Ingressante",
+      role: "Dev Full Stack",
       period: "Mar - 2026 — Presente",
       description: "Fintech de energia renovável focada em locação solar e democratização de investimentos (Vitis).",
       achievements: [
@@ -28,7 +28,7 @@ export default function Experience() {
     {
       company: "HypeCode Software House - Espírito Santo, Brasil",
       role: "Dev Full Stack web pj",
-      period: "Set - 2025 — Mar - 2026",
+      period: "Set - 2025 — fev - 2026",
       description: "Foco total em ecossistema Next.js e integrações com APIs complexas.",
       achievements: [
         "Desenvolvimento de sistemas completos.",

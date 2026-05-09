@@ -14,8 +14,9 @@ import {
   SiJavascript,
   SiSupabase,
   SiVite,
+  SiCss,
 } from "react-icons/si";
-import { FaCss3Alt } from 'react-icons/fa'; 
+import { FaCss3Alt, FaFileExcel } from 'react-icons/fa'; 
 
 
 export default function Projects() {
@@ -53,7 +54,7 @@ export default function Projects() {
       image: "/assets/project2.png"
     },
     {
-      title: 'Project UniConnect',
+      title: 'System UniConnect',
       description: "Sistema para comunidade academica de alunos e professores universitários",
       objective: "Fomentar o networking e a colaboração científica através de um ecossistema digital intuitivo e seguro.",
       tech: [
@@ -67,6 +68,21 @@ export default function Projects() {
       github: "https://github.com/gusttamartins01/connect-hub",
       demo: "https://learn-connect-hub-93.vercel.app/",
       image: "/assets/project3.png"
+    },
+    {
+      title: 'System Chaoscience',
+      description: "Sistema de pré lançammento da plataforma V.2",
+      objective: "Captar profissionais da área esportiva para impulsionar o valume 2 da plataforma.",
+      tech: [
+        { name: "HTML5", icon: <SiHtml5 /> },
+        { name: "CSS3", icon: <SiCss /> },
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Excel", icon: <FaFileExcel /> },
+      ],
+      github: "https://github.com/gusttamartins01/chaoscience-landingPage",
+      demo: "https://chaoscience-core.vercel.app/",
+      image: "/assets/chaos.png"
     }
   ];
 
