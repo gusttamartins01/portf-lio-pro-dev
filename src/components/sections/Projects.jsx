@@ -15,6 +15,7 @@ import {
   SiSupabase,
   SiVite,
   SiCss,
+  SiExpress,
 } from "react-icons/si";
 import { FaCss3Alt, FaFileExcel } from 'react-icons/fa'; 
 
@@ -36,6 +37,21 @@ export default function Projects() {
       github: "https://github.com/gusttamartins01/Estoque-Pro",
       demo: "https://estoque-pro-flame.vercel.app/",
       image: "/assets/project1.png"
+    },
+    {
+      title: "Entrelinhas Backend API",
+      description: "API REST robusta e escalável para gerenciamento do acervo de uma biblioteca digital, aplicando arquitetura em camadas (MVC).",
+      objective: "Persistência de dados segura na nuvem e separação clara de responsabilidades no ecossistema backend.",
+      tech: [
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "SupaBase", icon: <SiSupabase /> },
+        { name: "Express.js", icon: <SiExpress /> },
+      ],
+      github: "https://github.com/gusttamartins01/entrelinhas-backend",
+      demo: "https://entrelinhas-backend.vercel.app/library",
+      image: "/assets/entrelinhas.png"
     },
     {
       title: 'Project "My First Job"',
