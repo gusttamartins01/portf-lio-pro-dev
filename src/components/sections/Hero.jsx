@@ -45,7 +45,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/assets/Gustavo Martins - Currículo profissional.pdf"
+              href="/assets/Gustavo Martins - Currículo profissional!.pdf"
               download
               className="px-6 py-3 bg-purple-800 text-white rounded-xl font-semibold hover:bg-purple-500 transition duration-300 shadow-md hover:shadow-purple-800/50"
             >
