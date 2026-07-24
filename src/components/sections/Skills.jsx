@@ -16,6 +16,7 @@ export default function Skills() {
     { name: "React", icon: getIcon("SiReact"), color: "hover:text-[#61DAFB]" },
     { name: "Next.js", icon: getIcon("SiNextdotjs"), color: "hover:text-white" },
     { name: "Node.js", icon: getIcon("SiNodedotjs"), color: "hover:text-[#339933]" },
+    { name: "Express", icon: getIcon("SiExpress"), color: "hover:text-white" },
     { name: "Java", icon: <FaJava />, color: "hover:text-[#6e0101]" },
     { name: "Spring Boot", icon: getIcon("SiSpring"), color: "hover:text-[#339922]" },
     { name: "Tailwind", icon: getIcon("SiTailwindcss"), color: "hover:text-[#06B6D4]" },
@@ -30,6 +31,8 @@ export default function Skills() {
     { name: "Figma", icon: getIcon("SiFigma"), color: "hover:text-[#FFC0CB]" },
     { name: "Git", icon: getIcon("SiGit"), color: "hover:text-[#F05032]" },
     { name: "GitHub", icon: getIcon("SiGithub"), color: "hover:text-white" },
+    { name: "Biome", icon: getIcon("SiBiome"), color: "hover:text-[#60A5FA]" },
+    { name: "Lefthook", icon: getIcon("SiLefthook"), color: "hover:text-[#FF6B35]" },
   ];
 
   const scrollingSkills = [...skills, ...skills];
