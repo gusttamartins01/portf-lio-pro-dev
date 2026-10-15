@@ -45,7 +45,7 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
-              href="/assets/Gustavo Martins - Currículo profissional!.pdf"
+              href="/assets/Curriculo_Luiz_Gustavo_Martins.pdf"
               download
               className="px-6 py-3 bg-purple-800 text-white rounded-xl font-semibold hover:bg-purple-500 transition duration-300 shadow-md hover:shadow-purple-800/50"
             >
@@ -72,7 +72,7 @@ export default function Hero() {
         <div className="flex justify-center order-1 md:order-2">
           <div className="relative">
             <img
-              src="/assets/me.png"
+              src="/assets/me2.png"
               alt="Gustavo Martins"
               className="w-60 h-60 md:w-96 md:h-96 object-cover rounded-full border-4 border-purple-800 shadow-xl transform transition-transform duration-1000 hover:scale-105"
             />
