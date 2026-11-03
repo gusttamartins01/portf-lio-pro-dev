@@ -34,7 +34,7 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-2xl md:text-5xl text-gray-300 mt-4">
-            Desenvolvedor Full Stack
+            Engenheiro de Software
           </h2>
 
           <p className="text-gray-200/70 mt-4 text-lg max-w-xl">

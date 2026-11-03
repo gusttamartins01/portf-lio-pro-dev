@@ -3,27 +3,28 @@ import * as Lucide from "lucide-react";
 
 export default function Experience() {
   const experiences = [
-    {
-      company: "ChaoScience Ciência e Tecnologia",
-      role: "Dev Full Stack ",
-      period: "Abr - 2026 - Presente",
-      description: "SaaS voltado para profissionais da área da sáude focados em condicionamento físico, alto rendimento e performance espor",
-      achievements: [
-        "Implementação de arquitetura escalável integrando C# e React/Next.js.",
-        "Foco em usabilidade para profissionais de saúde que monitoram atletas e pacientes."
-      ],
-      current: true,
-    },
+
     {
       company: "Virtutis Energy",
       role: "Dev Full Stack",
-      period: "Mar - 2026 — Presente",
+      period: "Mar - 2026 — Ago - 2026",
       description: "Fintech de energia renovável focada em locação solar e democratização de investimentos (Vitis).",
       achievements: [
         "Manutenção e implementação de novas funcionalidades no ecossistema Web (Next.js) e Mobile (Swift).",
         "Implementação de automações e fluxos de trabalho otimizados com Inteligência Artificial.",
       ],
-      current: true,
+      current: false,
+    },
+    {
+      company: "ChaoScience Ciência e Tecnologia",
+      role: "Dev Full Stack ",
+      period: "Abr - 2026 - Jul - 2026",
+      description: "SaaS voltado para profissionais da área da sáude focados em condicionamento físico, alto rendimento e performance espor",
+      achievements: [
+        "Implementação de arquitetura escalável integrando C# e React/Next.js.",
+        "Foco em usabilidade para profissionais de saúde que monitoram atletas e pacientes."
+      ],
+      current: false,
     },
     {
       company: "HypeCode Software House - Espírito Santo, Brasil",

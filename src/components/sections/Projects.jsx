@@ -16,15 +16,54 @@ import {
   SiVite,
   SiCss,
   SiExpress,
+  SiPrisma,
 } from "react-icons/si";
 import { FaCss3Alt, FaFileExcel } from 'react-icons/fa'; 
 
 
 export default function Projects() {
   const projects = [
+     {
+      title: "BarberFlow",
+      description: "Plataforma para gerenciamento de barbearias.",
+      objective: "Oragnizar agendamentos, filas de clientes, chatBot, e catálogo de serviços.",
+      tech: [
+        { name: "React", icon: <SiReact /> },
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Express", icon: <SiExpress /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Docker", icon: <SiDocker /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "PrismaORM", icon: <SiPrisma /> },
+
+      ],
+      github: "https://github.com/gusttamartins01/BarberFlow-backend",
+      demo: "https://github.com/gusttamartins01/BarberFlow-frontend-",
+      image: "/assets/barber.png"
+    },
+    {
+      title: "Workly AI",
+      description: "Plataforma para micro-empresas com suporte de RH, DP, SST e Direito trabalhista com um agente de IA integrado.",
+      objective: "Organizar informaçoes co ajuda do Wiky - Agente IA.",
+      tech: [
+        { name: "React", icon: <SiReact /> },
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Express", icon: <SiExpress /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Docker", icon: <SiDocker /> },
+        { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "PrismaORM", icon: <SiPrisma /> },
+
+      ],
+      github: "https://github.com/gusttamartins01/workly-system",
+      demo: "https://workly-lemon.vercel.app/",
+      image: "/assets/workly.png"
+    },
     {
       title: "Smart Inventory System",
-      description: "Dashboard Full Stack para controle de inventário em tempo real. Implementa CRUD completo e detalhad0.",
+      description: "Dashboard Full Stack para controle de inventário em tempo real. Implementa CRUD completo e detalhado.",
       objective: "Organização do inventário simplificada com foco em UX moderna.",
       tech: [
         { name: "HTML5", icon: <SiHtml5 /> },
