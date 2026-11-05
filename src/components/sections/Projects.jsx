@@ -39,7 +39,7 @@ export default function Projects() {
 
       ],
       github: "https://github.com/gusttamartins01/BarberFlow-backend",
-      demo: "https://github.com/gusttamartins01/BarberFlow-frontend-",
+      demo: "https://barber-flow-frontend.vercel.app/",
       image: "/assets/barber.png"
     },
     {
