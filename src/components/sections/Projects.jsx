@@ -6,8 +6,6 @@ import {
   SiTailwindcss,
   SiPostgresql,
   SiTypescript,
-  SiNextdotjs,
-  SiFirebase,
   SiGithub,
   SiNodedotjs,
   SiDocker,
@@ -18,12 +16,12 @@ import {
   SiExpress,
   SiPrisma,
 } from "react-icons/si";
-import { FaCss3Alt, FaFileExcel } from 'react-icons/fa'; 
+import { FaCss3Alt, FaFileExcel } from 'react-icons/fa';
 
 
 export default function Projects() {
   const projects = [
-     {
+    {
       title: "BarberFlow",
       description: "Plataforma para gerenciamento de barbearias.",
       objective: "Oragnizar agendamentos, filas de clientes, chatBot, e catálogo de serviços.",
@@ -60,6 +58,23 @@ export default function Projects() {
       github: "https://github.com/gusttamartins01/workly-system",
       demo: "https://workly-lemon.vercel.app/",
       image: "/assets/workly.png"
+    },
+    {
+      title: "CoffeeFlow",
+      description: "Website institucional de uma cafeteria, desenvolvido para apresentar o ambiente, o cardápio e a experiência oferecida aos clientes.",
+      objective: "Proporcionar uma experiência digital moderna e intuitiva, destacando os produtos, a identidade visual e os espaços da cafeteria, aproximando a marca de seus clientes.",
+      tech: [
+        { name: "React", icon: <SiReact /> },
+        { name: "Tailwind", icon: <SiTailwindcss /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+        { name: "Node.js", icon: <SiNodedotjs /> },
+        { name: "Vite", icon: <SiVite /> },
+
+
+      ],
+      github: "https://github.com/gusttamartins01/CoffeeFlow",
+      demo: "https://coffeeflow-ten.vercel.app/",
+      image: "/assets/coffee.png"
     },
     {
       title: "Smart Inventory System",
